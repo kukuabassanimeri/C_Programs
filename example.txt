@@ -1,0 +1,2 @@
+Writing into file in C programming.
+This line has been added to the existing content in the file.

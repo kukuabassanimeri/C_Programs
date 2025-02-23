@@ -94,6 +94,41 @@ int main()
     int facto = factorial(fact);
     printf("Factorial of %d is: %d\n", fact, facto);
 
+
+    //*C ARRAYS - Array is avariable that can store multiple values
+    //*A program to take 5 values from the user and store them in an array
+
+    int values[5];
+    printf("Enter the numbers to store: ");
+
+    //*Take inputs and store it in array
+    for (int i = 0; i < 5; i++){
+        scanf("%d", &values[i]);
+    }
+
+    //*Print the array values
+    printf("Stored values: ");
+    for (int i = 0; i < 5; i++){
+        printf("%d\n", values[i]);
+    }
+
+    //*Array program to find average of n numbers
+    int marks[5], i, n, sum = 0;
+    double average;
+
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    for(i = 0; i < n; i++){
+        printf("Enter number %d: ", i+1);
+        scanf("%d", &marks[i]);
+        sum += marks[i];
+    }
+
+    //*Convert sum to double then calculate average
+    average = (double)sum / n;
+    printf("Average of the numbers: %.2f\n", average);
+
     return 0;
 
 }
